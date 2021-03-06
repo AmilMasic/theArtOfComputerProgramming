@@ -1,0 +1,19 @@
+{
+  "name": "theArtOfComputerProgramming",
+  "version": "1.0.0",
+  "description": "my path with the same named book. I am going to try to solve all the problems that are in the book.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmilMasic/theArtOfComputerProgramming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmilMasic/theArtOfComputerProgramming/issues"
+  },
+  "homepage": "https://github.com/AmilMasic/theArtOfComputerProgramming#readme"
+}
