@@ -1,27 +1,33 @@
 // create an algorithm that will find
 // the highest common divisor between two numbers
 // also know as Euclid's Algorithm
-function divisor(x,y) {
-  let m = x;
-  let n = y;
-  swapNumbers(m,n);
 
-}
-
-divisor(3,6);
-divisor(10, 9);
 
 //function to swap the position if the second number given is bigger than the first
-function swapNumbers(m,n) {
+function algorithmE(m,n) {
+  const originalM = m;
+  const originalN = n;
+  let highestDivisor = m;
   if (n > m) {
-    let r = n;
-    n = m;
-    m = r;
-    console.log("this is the updated n value " + n)
-    console.log("this is the updated m value " + m)
-
+    let f = m;
+    m = n;
+    n = f;
+  } else {
+    // console.log("Nothing to swap");
   }
-  else {
-    console.log("X was lower than Y");
-  }
+  let divide = () => highestDivisor = m % n;
+  do {
+    m = n;
+    n = highestDivisor;
+    divide(m, n)
+  } while (highestDivisor !== 0)
+  console.log("The highest divisor between " + originalM + " and " + originalN + " is " + n);
 }
+
+algorithmE(20,10);
+algorithmE(20,15);
+algorithmE(20,150);
+algorithmE(27,13);
+algorithmE(20011,152);
+algorithmE(6,3);
+algorithmE(15,4);
