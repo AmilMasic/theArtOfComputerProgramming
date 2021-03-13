@@ -8,13 +8,7 @@ function algorithmE(m,n) {
   const originalM = m;
   const originalN = n;
   let highestDivisor = m;
-  if (n > m) {
-    let f = m;
-    m = n;
-    n = f;
-  } else {
-    // console.log("Nothing to swap");
-  }
+  swapNumbers(m,n);
   let divide = () => highestDivisor = m % n;
   do {
     m = n;
@@ -24,10 +18,21 @@ function algorithmE(m,n) {
   console.log("The highest divisor between " + originalM + " and " + originalN + " is " + n);
 }
 
-algorithmE(20,10);
-algorithmE(20,15);
-algorithmE(20,150);
-algorithmE(27,13);
-algorithmE(20011,152);
-algorithmE(6,3);
-algorithmE(15,4);
+function swapNumbers(m, n) {
+  if (n > m) {
+    let f = m;
+    m = n;
+    n = f;
+  }
+  return (m,n);
+}
+
+algorithmE(3,9);
+algorithmE(10,7);
+// algorithmE(20,10);
+// algorithmE(20,15);
+// algorithmE(20,150);
+// algorithmE(27,13);
+// algorithmE(20011,152);
+// algorithmE(6,3);
+// algorithmE(15,4);
